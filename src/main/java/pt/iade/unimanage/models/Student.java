@@ -1,6 +1,7 @@
 package pt.iade.unimanage.models;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Student {
   private static int nextNumber = 0;
@@ -11,6 +12,8 @@ public class Student {
   private char gender;
   private int number;
 
+  private ArrayList<Unit> units;
+
   public Student(String name, LocalDate birthDate, char gender) {
     this.number = nextNumber;
     nextNumber++;
@@ -18,6 +21,16 @@ public class Student {
     this.birthDate = birthDate;
     this.gender = gender;
     email = "";
+    units = new ArrayList<Unit>();
+  }
+
+  public ArrayList<Unit> getUnits() {
+    return units;
+  }
+
+  public void enroll(Unit unit) {
+    units.add(unit);
+    unit.getStudents().add(this);
   }
 
   public static int getNextNumber() {
