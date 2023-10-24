@@ -12,7 +12,7 @@ public class Student {
   private char gender;
   private int number;
 
-  private ArrayList<Unit> units;
+  private ArrayList<Enrolment> enrolments;
 
   public Student(String name, LocalDate birthDate, char gender) {
     this.number = nextNumber;
@@ -21,16 +21,16 @@ public class Student {
     this.birthDate = birthDate;
     this.gender = gender;
     email = "";
-    units = new ArrayList<Unit>();
+    enrolments = new ArrayList<Enrolment>();
   }
 
-  public ArrayList<Unit> getUnits() {
-    return units;
+  public ArrayList<Enrolment> getEnrolments() {
+    return enrolments;
   }
 
-  public void enroll(Unit unit) {
-    units.add(unit);
-    unit.getStudents().add(this);
+  public void enroll(Enrolment enrolment) {
+    enrolments.add(enrolment);
+    enrolment.getUnit().getEnrolments().add(enrolment);
   }
 
   public static int getNextNumber() {

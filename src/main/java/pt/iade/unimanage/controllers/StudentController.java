@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pt.iade.unimanage.models.*;
+import pt.iade.unimanage.models.repositories.StudentRepository;
 
 @RestController
 @RequestMapping(path = "/api/students")
