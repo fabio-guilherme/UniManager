@@ -1,4 +1,4 @@
-package pt.iade.unimanage.models;
+package pt.iade.unimanager.models;
 
 public class Enrolment {
     private Student student;

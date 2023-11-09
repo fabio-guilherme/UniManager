@@ -1,4 +1,4 @@
-package pt.iade.unimanage.models;
+package pt.iade.unimanager.models;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

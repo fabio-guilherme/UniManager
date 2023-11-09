@@ -1,10 +1,10 @@
-package pt.iade.unimanage.models.repositories;
+package pt.iade.unimanager.models.repositories;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import pt.iade.unimanage.models.Student;
+import pt.iade.unimanager.models.Student;
 
 public class StudentRepository {
   private static ArrayList<Student> students = new ArrayList<Student>();

@@ -1,9 +1,9 @@
-package pt.iade.unimanage;
+package pt.iade.unimanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import pt.iade.unimanage.models.repositories.StudentRepository;
+import pt.iade.unimanager.models.repositories.StudentRepository;
 
 @SpringBootApplication
 public class UniManageApplication {

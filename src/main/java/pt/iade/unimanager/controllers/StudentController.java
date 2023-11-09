@@ -1,4 +1,4 @@
-package pt.iade.unimanage.controllers;
+package pt.iade.unimanager.controllers;
 
 import java.util.List;
 import org.slf4j.Logger;
@@ -7,8 +7,9 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pt.iade.unimanage.models.*;
-import pt.iade.unimanage.models.repositories.StudentRepository;
+
+import pt.iade.unimanager.models.*;
+import pt.iade.unimanager.models.repositories.StudentRepository;
 
 @RestController
 @RequestMapping(path = "/api/students")
