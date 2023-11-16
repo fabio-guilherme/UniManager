@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pt.iade.unimanager.models.repositories.StudentRepository;
 
 @SpringBootApplication
-public class UniManageApplication {
+public class UniManagerApplication {
 
 	public static void main(String[] args) {
 		StudentRepository.populate();
