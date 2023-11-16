@@ -10,7 +10,7 @@ public class UniManagerApplication {
 
 	public static void main(String[] args) {
 		StudentRepository.populate();
-		SpringApplication.run(UniManageApplication.class, args);
+		SpringApplication.run(UniManagerApplication.class, args);
 	}
 
 }
